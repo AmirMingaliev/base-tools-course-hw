@@ -44,6 +44,8 @@ group :development, :test do
   gem 'scss_lint', require: false
   gem 'slim_lint', require: false
   gem 'bundler-audit', require: false
+  gem 'rspec-rails', '~> 3.5'
+  gem 'jasmine'
 end
 
 group :development do
