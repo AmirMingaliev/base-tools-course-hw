@@ -31,11 +31,19 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'dotenv-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'dotenv-rails'
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'brakeman', require: false
+  gem 'coffeelint'
+  gem 'scss_lint', require: false
+  gem 'slim_lint', require: false
+  gem 'bundler-audit', require: false
 end
 
 group :development do
