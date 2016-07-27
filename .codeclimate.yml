@@ -4,31 +4,29 @@ engines:
     enabled: true
   bundler-audit:
     enabled: true
-  csslint:
-    enabled: false
+  coffeelint:
+    enabled: true
   duplication:
     enabled: true
     config:
       languages:
       - ruby
       - javascript
-  eslint:
-    enabled: false
   fixme:
     enabled: true
   rubocop:
     enabled: true
-    config: "config/rubocop.yml"
 ratings:
   paths:
   - Gemfile.lock
   - "**.erb"
   - "**.rb"
   - "**.slim"
-  - "**.css"
+  - "**.coffee"
   - "**.js"
 exclude_paths:
+- bin/
 - config/
 - db/
-- test/
-- vendor/
+- spec/
+- lib/
