@@ -8,6 +8,8 @@ gem "puma", "~> 3.0"
 
 gem "bootstrap", "~> 4.0.0.alpha3.1"
 gem "coffee-rails", "~> 4.2"
+gem "decent_exposure", "3.0.0"
+gem "interactor", "~> 3.0"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"

@@ -64,6 +64,8 @@ GEM
       json
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
+    decent_exposure (3.0.0)
+      activesupport (>= 4.0)
     diff-lcs (1.2.5)
     dotenv (2.1.1)
     dotenv-rails (2.1.1)
@@ -77,6 +79,7 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    interactor (3.1.0)
     jasmine (2.4.0)
       jasmine-core (~> 2.4)
       phantomjs
@@ -242,8 +245,10 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   coffeelint
+  decent_exposure (= 3.0.0)
   dotenv-rails
   foreman
+  interactor (~> 3.0)
   jasmine
   jbuilder (~> 2.5)
   jquery-rails
