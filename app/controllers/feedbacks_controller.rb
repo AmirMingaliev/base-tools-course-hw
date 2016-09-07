@@ -10,7 +10,7 @@ class FeedbacksController < ApplicationController
     if result.success?
       redirect_to new_feedback_path, notice: I18n.t("feedback.sended")
     else
-      render 'new'
+      render "new"
     end
   end
 
