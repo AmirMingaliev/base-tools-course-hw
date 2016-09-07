@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-lg-4 push-lg-4">
-    <%= simple_form_for @feedback do |f| %>
+    <%= simple_form_for(feedback) do |f| %>
       <%= f.input :name, label: "Your name" %>
       <%= f.input :email, label: "Your email" %>
-      <%= f.input :body, label: "Your feedback" %>
+      <%= f.input :body, as: :text, label: "Your feedback" %>
 
       <%= f.button :submit, class: "btn btn-primary" %>
     <% end %>
