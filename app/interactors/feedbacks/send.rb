@@ -1,5 +1,5 @@
 module Feedbacks
-  class ValidateAndSend
+  class Send
     include Interactor
 
     delegate :feedback, to: :context

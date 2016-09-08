@@ -5,10 +5,10 @@ class FeedbacksController < ApplicationController
   end
 
   def create
-    result = Feedbacks::ValidateAndSend.call(feedback: feedback)
+    result = Feedbacks::Send.call(feedback: feedback)
 
     if result.success?
-      redirect_to new_feedback_path, notice: I18n.t("feedback.sended")
+      redirect_to new_feedback_path, notice: I18n.t("feedback.sent")
     else
       render "new"
     end

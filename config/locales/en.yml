@@ -24,4 +24,4 @@ en:
     feedback:
       subject: "New feedback from %{name}"
   feedback:
-      sended: "Feedback was successfully sended"
+      sended: "Feedback was successfully sent"

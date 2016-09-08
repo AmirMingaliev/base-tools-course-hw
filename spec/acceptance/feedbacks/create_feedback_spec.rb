@@ -10,7 +10,7 @@ describe "Create feedback", type: :feature do
 
     click_on "Create Feedback"
 
-    expect(page).to have_content(I18n.t("feedback.sended"))
+    expect(page).to have_content(I18n.t("feedback.sent"))
   end
 
   scenario "User creates feedback with invalid params" do
