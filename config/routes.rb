@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root "pages#index"
+  resources :feedbacks, only: %i(new create)
+
+  root "feedbacks#new"
 end
